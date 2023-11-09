@@ -4,39 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container w-auto mx-auto  dark:bg-slate-800">
         <form action="/" id="form">
-            <h1>Registration</h1>
-                    <!-- username -->
-            <div class="input-contorl">
-                <label for="username">Username</label>
-                <input type="text" id="username">
-                <span><div class="error"></div></span>
-            </div>
-                    <!-- Email -->
-            <div class="input-control">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <span><div class="error"></div></span>
-            </div>
-                    <!-- Password -->
-            <div class="input-control">
-                <label for="passowrd">Password</label>
-                <input type="password" id="password">
-                <span><div class="error"></div></span>
-            </div>
-                        <!--password Again  -->
-            <div class="input-control">
-                <label for="password">Password again</label>
-                <input type="password" id="password2">
-                <span><div class="error"></div></span>
+            <h1 class="text-left text-3xl text-gray-700 font-bold sm:text-center mx-5">
+                Registration
+            </h1>
+            <div class=" mt-10 sm:flex-row mx-5">
+                <!-- username -->
+                <div class="input-contorl">
+                    <label for="username" class="font-medium text-smn text-gray-600">Username</label>
+                    <input type="text" id="username"
+                        class="w-full border-0 border-b-2 border-gray-300 h-full mt-1 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+                    <span>
+                        <div class="error"></div>
+                    </span>
+                </div>
+                <!-- Email -->
+                <div class="input-control mt-2">
+                    <label for="email" class="font-medium text-smn text-gray-600">Email</label>
+                    <input type="email" id="email"
+                        class="w-full border-0 border-b-2 border-gray-300 h-full mt-1 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+                    <span>
+                        <div class="error"></div>
+                    </span>
+                </div>
+                <!-- Password -->
+                <div class="input-control mt-2">
+                    <label for="passowrd" class="font-medium text-smn text-gray-600">Password</label>
+                    <input type="password" id="password"
+                        class="w-full border-0 border-b-2 border-gray-300 h-full mt-1 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+                    <span>
+                        <div class="error"></div>
+                    </span>
+                </div>
+                <!--password Again  -->
+                <div class="input-control mt-2">
+                    <label for="password" class="font-medium text-smn text-gray-600">Password again</label>
+                    <input type="password" id="password2"
+                        class="w-full border-0 border-b-2 border-gray-300 h-full mt-1 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+                    <span>
+                        <div class="error"></div>
+                    </span>
+                </div>
             </div>
 
-                        <!-- button -->
-            <button>Submit</button>
+            <!-- button -->
+            <div class="flex sm:justify-end justify-center">
+                <button
+                    class="px-5 py-2 mt-3 border rounded-md bg-blue-500 text-smn font-medium text-white ml-2">Submit
+                </button>
+            </div>
         </form>
     </div>
 </body>
+
 </html>
+    <!-- ສະແດງວ່າຖ້ານ້ອຍກວ່າຂະໜາດທີ່ເຮົາທຳການກຳນົດໄວ້ໃຫ້,ມັນຈະມີການປ່ຽນແປງ ຕຳແໜ່ງຂອງວັດຖຸ -->
+    <!-- Home word = ທຳການສ້າງ dark mode and Light mode -->
