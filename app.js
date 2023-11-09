@@ -7,14 +7,14 @@ const password2 = document.getElementById("password2");
 form.addEventListener("submit",e =>{
     e.preventDefault();
 
-    // callback function
+    validateInputs();
+    
 });
 const setError = (element,message) =>{
     const inputControl = element.parentElement;
     const errorDisplay = inputControl.querySelector(".error");
 
     errorDisplay.innerText = message;
-    console.log(message);
     inputControl.classList.add("success");
     inputControl.classList.remove("error");
 }
